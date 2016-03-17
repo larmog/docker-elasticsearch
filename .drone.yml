@@ -9,7 +9,7 @@ publish:
   docker:
     environment:
       - DOCKER_LAUNCH_DEBUG=true
-    storage_driver: overlay
+#    storage_driver: overlay
     file: Dockerfile.armhf
     username: $$DOCKER_USERNAME
     password: $$DOCKER_PWD
