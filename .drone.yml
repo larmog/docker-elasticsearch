@@ -4,7 +4,7 @@ clone:
 build:
   image: hypriot/rpi-alpine-scratch
   commands:
-    - sed -e 's/quay.io\/pires\/docker-jre:8u74-dns/larmog\/armhf-alpine-java:jdk-8u73/g' Dockerfile > Dockerfile.armhf
+    - sed -e 's/quay.io\/pires\/docker-jre:8u72/larmog\/armhf-alpine-java:jdk-8u73/g' Dockerfile > Dockerfile.armhf
 publish:
   docker:
     environment:
@@ -16,5 +16,5 @@ publish:
     email: lars.mogren@gmail.com
     repo: larmog/elasticsearch-armhf
     tag: 
-      - "2.2.0"
+      - "2.3.0"
       - latest
